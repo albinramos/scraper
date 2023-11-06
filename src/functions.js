@@ -2,7 +2,7 @@ const productos=["melon", "sandia", "manzana"];
 
 const getAll = (array)=>{
     if(array.length === 0){
-        return "El array está vacio";
+        return "";
     }
     return array.join(", ")
     };
@@ -12,7 +12,7 @@ const getAll = (array)=>{
 
 const getByNombre= (array,nombre)=>{
     if(array.length === 0 || !nombre){
-        return "Los datos introducidos son incorrectos"
+        return ""
     }
     const producto = array.find((element) => element == nombre);
     return producto;
@@ -24,7 +24,7 @@ const createProduct = (producto,array)=>{
     return array;
 }
 
-console.log(createProduct("pera",productos));
+//console.log(createProduct("pera",productos));
 
 const updateProduct = (array,productName,newName)=>{
     const index = array.indexOf(productName);
@@ -40,10 +40,10 @@ const removeItem = (array,producto)=>{
       array.splice(index, 1);
       return `Producto ${producto} eliminado`;
     }
-    return `Producto ${producto} no encontrado`;
+    //return array;
 };
 
-export default {
+export {
     getAll,
     getByNombre,
     createProduct,
