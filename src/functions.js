@@ -40,7 +40,7 @@ const removeItem = (array,producto)=>{
       array.splice(index, 1);
       return `Producto ${producto} eliminado`;
     }
-    //return array;
+    return array;
 };
 
 export {

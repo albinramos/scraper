@@ -31,7 +31,7 @@ describe("test de funciones generales",()=>{
         const producto = "melon";
         const productNo = "lomo";
         const productoActualizado = "uva";
-        expect(updateProduct(array,producto,productoNuevo)).toEqual(["melonmelon", "sandia", "manzana"]);
+        expect(updateProduct(array,productoNuevo,producto)).toEqual(["melonmelon", "sandia", "manzana"]);
         expect(updateProduct(array,productNo, productoActualizado)).toEqual(["melon", "sandia", "manzana"]);
         
     })
