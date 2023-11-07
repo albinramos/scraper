@@ -1,4 +1,4 @@
-import {createProduct, getAll, getByNombre,updateProduct, removeItem} from "../src/functions.js";
+import {createProduct, getAll, getByNombre,updateProduct, removeItem} from "../../src/functions.js";
 
 describe("test de funciones generales",()=>{
 
